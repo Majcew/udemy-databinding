@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+        <div class="panel-heading" [ngStyle]="{'background-color': (element.type === 'Server') ? 'red' : 'blue'}">
+            <p>
+                {{ element.name }}
+            </p>
+        </div>
+        <div class="panel-body">
+          <p>
+            <strong *ngIf="element.type === 'Server'" style="color: red">{{ element.content }}</strong>
+            <em *ngIf="element.type === 'Blueprint'" style="color: blue;">{{ element.content }}</em>
+          </p>
+        </div>
+      </div>
