@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { element } from 'protractor';
-import { Element } from '../shared/element.module'
+import { Element } from '../shared/shared.module'
 
 @Component({
   selector: 'app-server-element',
